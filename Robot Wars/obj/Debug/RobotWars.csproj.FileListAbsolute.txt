@@ -1,0 +1,11 @@
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\bin\Debug\Robot Wars.exe.config
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\bin\Debug\Robot Wars.exe
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\bin\Debug\Robot Wars.pdb
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\bin\Debug\System.Net.Http.dll
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\RobotWars.csprojResolveAssemblyReference.cache
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\RobotWars.RobotWarBattleField_Form.resources
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\RobotWars.InitForm.resources
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\Robot_Wars.Properties.Resources.resources
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\RobotWars.csproj.GenerateResource.Cache
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\Robot Wars.exe
+C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\Robot Wars.pdb
