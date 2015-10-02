@@ -106,7 +106,10 @@ namespace RobotWars
             R2_plannedMove_textbox.Enabled = true;
             R2_Go_btn.Enabled = true;
 
+            //  "Position: " has 10 chars so capture the remaining string after that
             string currentPosition = R1_newPosition_lbl.Text.Substring(10);
+
+            //  Update robot 1 image position on the battlefield based on user command
             UpdateDisplay(R1_pbox, robot_1_bitmap, robot_1.getPositionX(), robot_1.getPositionY(), robot_1.getOrientation(), R1_plannedMove_textbox.Text);
 
             string newPosition = robot_1.calculatePlannedPosition(R1_plannedMove_textbox.Text);
@@ -117,9 +120,12 @@ namespace RobotWars
             Output_battlePage_textbox.AppendText("******* Robot 1 *******" + Environment.NewLine +
                 "Initial Position: " + currentPosition + Environment.NewLine +
                 "Planned Path: " + R1_plannedMove_textbox.Text + Environment.NewLine +
-                "New Position: " + newPosition + Environment.NewLine + Environment.NewLine);  
+                "New Position: " + newPosition + Environment.NewLine + Environment.NewLine);
 
-            if((robot_1.getPositionX() == robot_2.getPositionX()) && (robot_1.getPositionY() == robot_2.getPositionY()))
+            //  Clear the planned move textbox for the next move
+            R1_plannedMove_textbox.Text = string.Empty;
+
+            if ((robot_1.getPositionX() == robot_2.getPositionX()) && (robot_1.getPositionY() == robot_2.getPositionY()))
             {
                 //  Robot 1 scores a point!
                 R1_pbox.BringToFront();
@@ -147,18 +153,23 @@ namespace RobotWars
             R2_plannedMove_textbox.Enabled = false;
             R2_Go_btn.Enabled = false;
 
+            //  "Position: " has 10 chars so capture the remaining string after that
             string currentPosition = R2_newPosition_lbl.Text.Substring(10);
+
+            //  Update robot 1 image position on the battlefield based on user command
             UpdateDisplay(R2_pbox, robot_2_bitmap, robot_2.getPositionX(), robot_2.getPositionY(), robot_2.getOrientation(), R2_plannedMove_textbox.Text);
 
             string newPosition = robot_2.calculatePlannedPosition(R2_plannedMove_textbox.Text);
             R2_newPosition_lbl.Text = "Position: " + newPosition;
-
-            
+     
             //  Log results in Output window
             Output_battlePage_textbox.AppendText("******* Robot 2 *******" + Environment.NewLine +
                 "Initial Position: " + currentPosition + Environment.NewLine +
                 "Planned Path: " + R2_plannedMove_textbox.Text + Environment.NewLine +
                 "New Position: " + newPosition + Environment.NewLine + Environment.NewLine);
+
+            //  Clear the planned move textbox for the next move
+            R2_plannedMove_textbox.Text = string.Empty;
 
             if ((robot_2.getPositionX() == robot_1.getPositionX()) && (robot_2.getPositionY() == robot_1.getPositionY()))
             {
@@ -210,6 +221,7 @@ namespace RobotWars
                     break;
             }
 
+            //  Position the robot's initial position on the arena
             pBox.Location = new Point(X_map(robot.getPositionX()), Y_map(robot.getPositionY()));
         }
 

@@ -23,7 +23,7 @@ namespace RobotWars
                 thisGrid.VerticalCells.ToString() + " " + Environment.NewLine + Environment.NewLine);
 
             //  A robot needs these parameters to start: x coordinate, y coordinate, orientation, x origin, y origin, gridth width, grid height
-            //  Tell robot 1 how big the battlefield is and give it its corrdinates
+            //  Tell robot 1 how big the battlefield is and give it its coordinates
             robot_1 = new Robot(Int32.Parse(robot_1_positionX_cbox.Text), Int32.Parse(robot_1_positionY_cbox.Text), robot_1_orientation_cbox.Text, origin_x, origin_y, thisGrid.HorizontalCells, thisGrid.VerticalCells);
             string R1_currentPosition = robot_1_positionX_cbox.Text + " " + robot_1_positionY_cbox.Text + " " + robot_1_orientation_cbox.Text;
             string R1_newPosition = robot_1.calculatePlannedPosition(robot1_FirstMove_textbox.Text);
@@ -34,7 +34,7 @@ namespace RobotWars
                 "First move: " + robot1_FirstMove_textbox.Text + Environment.NewLine + 
                 "New Position: " + R1_newPosition + Environment.NewLine + Environment.NewLine);
 
-            //  Tell robot 1 how big the battlefield is and give it its corrdinates
+            //  Tell robot 2 how big the battlefield is and give it its coordinates
             robot_2 = new Robot(Int32.Parse(robot_2_positionX_cbox.Text), Int32.Parse(robot_2_positionY_cbox.Text), robot_2_orientation_cbox.Text, origin_x, origin_y, thisGrid.HorizontalCells, thisGrid.VerticalCells);
             string R2_currentPosition = robot_2_positionX_cbox.Text + " " + robot_2_positionY_cbox.Text + " " + robot_2_orientation_cbox.Text;
             string R2_newPosition = robot_2.calculatePlannedPosition(robot2_FirstMove_textbox.Text);
@@ -46,7 +46,8 @@ namespace RobotWars
                 "New Position: " + R2_newPosition + Environment.NewLine + Environment.NewLine);
 
             Output_initPage_textbox.AppendText("Press Go button to go to the Arena!" + Environment.NewLine);
-           Go_btn.Enabled = true;
+
+            Go_btn.Enabled = true;
         }
 
         private void setGridSize_btn_Click(object sender, EventArgs e)
@@ -75,12 +76,14 @@ namespace RobotWars
                 robot_2_positionY_cbox.Items.Add((i).ToString());
             }
 
+            //  Set default position of robot 1 at origin
             robot_1_positionX_cbox.SelectedIndex = 0;
             robot_1_positionY_cbox.SelectedIndex = 0;
             robot_1_orientation_cbox.SelectedIndex = 0;
 
-            robot_2_positionX_cbox.SelectedIndex = 1;
-            robot_2_positionY_cbox.SelectedIndex = 0;
+            //  Set default position of robot 2 at the upper right corner
+            robot_2_positionX_cbox.SelectedIndex = thisGrid.HorizontalCells;
+            robot_2_positionY_cbox.SelectedIndex = thisGrid.VerticalCells;
             robot_2_orientation_cbox.SelectedIndex = 0;
         }
 
@@ -93,14 +96,14 @@ namespace RobotWars
             robotWarsBattlefield_form.gridProperty.HorizontalCells = thisGrid.HorizontalCells;
             robotWarsBattlefield_form.gridProperty.VerticalCells = thisGrid.VerticalCells;
 
-            //  Parse robot 1 and robot 2 objects to next form
+            //  Parse robot 1 and robot 2 objects to battlefield form
             robotWarsBattlefield_form.robot_1_property = robot_1;
             robotWarsBattlefield_form.robot_2_property = robot_2;
 
             //  Hide the init form
             this.Hide();
 
-            //  Launch next form
+            //  Launch battlefield form
             robotWarsBattlefield_form.ShowDialog();
         }
 
