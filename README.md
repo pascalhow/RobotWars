@@ -12,7 +12,7 @@ Instructions
 L - Rotate counter clockwise on the spot  
 R - Rotate clockwise on the spot  
 M - Move in the direction the robot is facing by 1 unit  
-5) Click the initialise button and the Message centre window will provide information on the new robot starting position if a First move command was entered  
+5) Click the initialise button and the Message Centre textbox will provide information on the new robot starting position if a First move command was entered  
 6) Click "Go!" button to then proceed to the battlefield (See image below)  
 
 ###### Example - Battlefield
