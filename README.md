@@ -22,6 +22,6 @@ Instructions
   
 1) The grid on the left represents the battlefield. The robots are positioned according to the way they were configured on the setup page  
 2) Each robot takes turn to accept user commands (L, M and R) to move on the battlefield. Robot 1 (Red) starts first  
-3) Enter the commands in the Planned move textbox. The textbox accepts a maximum of 10 characters for fairness as this is a scoring game    
+3) Enter the commands in the Planned Move textbox. The textbox accepts a maximum of 10 characters for fairness as this is a scoring game    
 4) A robot earns a point if during its turn, it lands exactly on the other robot  
 5) The first to reach 5 points wins the battle  
