@@ -5,7 +5,7 @@
 
 Instructions
 
-1) Upon launching the Robot Wars application, the user is presented with the Setup page to  configure the robots (See image above)\n
+1) Upon launching the Robot Wars application, the user is presented with the Setup page to  configure the robots (See image above)  
 2) Adjust the grid width and grid height to configure the dimensions of the arena. The size of the arena can vary from 1x1 up to 10x10
 3) Position Robot 1 and Robot 2 on the field by entering their x, y coordinates and orientation (N, S, E, W)
 4) (Optional) Enter a first move for each robot. The robots only accept L, R and M commands
