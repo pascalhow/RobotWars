@@ -1,5 +1,10 @@
 # RobotWars
 
+Instructions  
+  
+1) The application has been built against .Net Framework 4.0 in Visual Studio 2015
+2) Download the RobotWars repository with all the contents and run the Project Solution: RobotWars.sln  
+  
 ###### Example - Setup Page
 ![alt tag](https://github.com/pascalhow/RobotWars/blob/master/RobotWars%20Setup%20page.PNG)
 
