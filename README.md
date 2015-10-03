@@ -2,7 +2,7 @@
 
 Instructions  
   
-1) The application has been built against .Net Framework 4.0 in Visual Studio 2015
+1) The application has been built against .Net Framework 4.0 in Visual Studio 2015  
 2) Download the RobotWars repository with all the contents and run the Project Solution: RobotWars.sln  
   
 ###### Example - Setup Page
