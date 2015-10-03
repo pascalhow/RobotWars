@@ -16,8 +16,8 @@ Instructions
 4) (Optional) Enter a first move for each robot. The robots only accept L, R and M commands  
 L - Rotate counter clockwise on the spot  
 R - Rotate clockwise on the spot  
-M - Move in the direction the robot is facing by 1 unit 
-For eg: LMLMLMLMM if the robot is facing north results in moving north by 1 unit  
+M - Move in the direction the robot is facing by 1 unit   
+For eg: If the robot is facing north, command "LMLMLMLMM" results causes it to move north by 1 unit    
 Note: If the robot hits the boundary of the arena on an 'M' command, it will not move forward. It will then proceed with the next instruction in its "Planned Move" command string  
 5) Click the initialise button and the Message Centre textbox will provide information on the new robot starting position if a First move command was entered  
 6) Click "Go!" button to then proceed to the battlefield (See image below)  
