@@ -9,3 +9,6 @@ C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\R
 C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\RobotWars.csproj.GenerateResource.Cache
 C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\Robot Wars.exe
 C:\Users\pascalh\Documents\SoftwareDevelopment\Robot Wars\Robot Wars\obj\Debug\Robot Wars.pdb
+C:\Users\pascalh\Documents\SoftwareDevelopment\GitHub\Robot Wars\Robot Wars\bin\Debug\Robot Wars.exe.config
+C:\Users\pascalh\Documents\SoftwareDevelopment\GitHub\Robot Wars\Robot Wars\obj\Debug\Robot Wars.exe
+C:\Users\pascalh\Documents\SoftwareDevelopment\GitHub\Robot Wars\Robot Wars\obj\Debug\Robot Wars.pdb
